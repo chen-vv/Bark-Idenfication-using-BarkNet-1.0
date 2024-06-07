@@ -114,7 +114,7 @@ def accuracy(output, target, topk=(1,)):
    # target [1,batch_size] expands to be [maxk, batch_size] by repeating same correct class answer maxk times.
    # when you compare pred (indexes) with expanded target, you get 'correct' matrix in the shape of  [maxk, batch_size] filled with 1 and 0 for correct and wrong class assignments
         correct = pred.eq(target.view(1, -1).expand_as(pred))
-   """ correct=([[0, 0, 1,  ..., 0, 0, 0],
+        """ correct=([[0, 0, 1,  ..., 0, 0, 0],
         [1, 0, 0,  ..., 0, 0, 0],
         [0, 0, 0,  ..., 1, 0, 0],
         [0, 0, 0,  ..., 0, 0, 0],

@@ -45,10 +45,10 @@ def train(model,
         running_loss += loss.item() * inputs.size(0)
         running_corrects += torch.sum(preds == labels.data)
 
-        """num_of_samples = curr_iter * batch_size
+        num_of_samples = curr_iter * batch_size
         print('\r[{}/{}]Train Loss: {:.4f} - Train Accuracy: {:.4f}'.format(curr_iter, num_iter,
                                                                             running_loss / num_of_samples,
-                                                                            running_corrects / num_of_samples), end='')"""
+                                                                            running_corrects / num_of_samples), end='')
 
         curr_iter += 1
 
