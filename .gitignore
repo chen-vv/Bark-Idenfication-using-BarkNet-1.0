@@ -1,0 +1,5 @@
+.venv/
+BarkNet_1_0/*/
+utils/logs
+trained_models/*
+.vscode/
