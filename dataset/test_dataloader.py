@@ -39,3 +39,11 @@ def get_test_dataloader(dataset_path, batch_size, input_size):
     test_loader = torch.utils.data.DataLoader(dataset=test_data, batch_size=batch_size, shuffle=True,
                                                num_workers=6, drop_last=True, pin_memory=True)
     return test_loader
+
+def get_custom_test_dataloader(dataset_path, batch_size, input_size):
+    test_set_path = "BarkNet_1_0/custom_test.csv"
+    test_data = TestDataset(test_set_path, dataset_path, input_size)
+    test_loader = torch.utils.data.DataLoader(dataset=test_data, batch_size=batch_size, shuffle=True,
+                                               num_workers=6, drop_last=True, pin_memory=True)
+    return test_loader
+

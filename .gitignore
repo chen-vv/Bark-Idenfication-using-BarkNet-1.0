@@ -1,4 +1,6 @@
 .venv/
 BarkNet_1_0/*/
+!BarkNet_1_0/custom/*
+trained_models/checkpoints
 utils/logs
 .vscode/
