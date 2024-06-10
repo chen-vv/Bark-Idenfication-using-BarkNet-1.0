@@ -2,7 +2,7 @@ DATASET_PATH = BarkNet_1_0/
 LOG_PATH = utils/logs/
 
 N_EPOCHS = 50
-BATCH_SIZE = 64
+BATCH_SIZE = 4
 
 LR_DECAY = 0.2
 EPOCH_DECAY = 10
